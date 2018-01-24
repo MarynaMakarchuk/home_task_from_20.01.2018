@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>!DOCTYPE</title>
+    <meta charset="utf-8">
+    <style>
+        .form-area{
+            width: 300px;
+            background-color: whitesmoke;
+            border: 2px solid blue;
+        }
+        .field_input {
+            width: 115px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px;
+            border: 1px solid blue;
+        }
+        .submit_field{
+            width: 115px;
+            font-weight: bold;
+            margin:10px;
+            border: 1px solid blue;
+        }
+        #submit{
+            width: 115px;
+        }
+    </style>
+</head>
+<body>
+<div class="form-area">
+<form action="DOC.php" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="MAX_FILE_SIZE" value="2000000">
+    <div class = "field_input">
+    <input type="file" name="file" id = "file" value="Choose file">
+    </div>
+    <div class="submit_field"> <input type="submit" value="Send file" id="submit"></div>
+</form>
+</div>
+</body>
+</html>
